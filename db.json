@@ -1,0 +1,41 @@
+{
+  "loans": [
+    {
+      "id": "4d3f3d2e-fb28-4315-a20c-a9975aa0cdc3",
+      "loanAmount": 200000,
+      "annualInterestRate": 0.035,
+      "loanDate": "2023-01-15T00:00:00.000Z",
+      "numberOfYears": 30
+
+      
+    },
+    {
+      "id": "5c1f2b9e-3d6a-4b8e-9798-8f5a1d2c3b4a",
+      "loanAmount": 350000,
+      "annualInterestRate": 0.042,
+      "loanDate": "2023-02-20T00:00:00.000Z",
+      "numberOfYears": 30
+    },
+    {
+      "id": "8a9b4c2d-1e6f-4a3b-9b1c-0d7e8f9a2b3c",
+      "loanAmount": 150000,
+      "annualInterestRate": 0.039,
+      "loanDate": "2023-03-10T00:00:00.000Z",
+      "numberOfYears": 15
+    },
+    {
+      "id": "e2b3c1d0-9f8a-4b7c-8d6e-5f4a3b2c1d0e",
+      "loanAmount": 500000,
+      "annualInterestRate": 0.038,
+      "loanDate": "2023-04-05T00:00:00.000Z",
+      "numberOfYears": 30
+    },
+    {
+      "id": "f5a6b7c8-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+      "loanAmount": 275000,
+      "annualInterestRate": 0.045,
+      "loanDate": "2023-05-12T00:00:00.000Z",
+      "numberOfYears": 20
+    }
+  ]
+}

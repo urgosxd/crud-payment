@@ -1,0 +1,28 @@
+<form [formGroup]="loanForm">
+  <div class="form-group">
+    <label for="loanAmount">Loan Amount</label>
+    <input id="loanAmount" type="number" formControlName="loanAmount">
+    @if (loanForm.get('loanAmount')?.invalid && loanForm.get('loanAmount')?.touched) {
+      <div class="error-message">Loan amount must be greater than 0.</div>
+    }
+  </div>
+  <div class="form-group">
+    <label for="annualInterestRate">Annual Interest Rate</label>
+    <input id="annualInterestRate" type="number" formControlName="annualInterestRate">
+    @if (loanForm.get('annualInterestRate')?.invalid && loanForm.get('annualInterestRate')?.touched) {
+      <div class="error-message">Annual interest rate must be greater than 0.</div>
+    }
+  </div>
+  <div class="form-group">
+    <label for="numberOfYears">Number of Years</label>
+    <input id="numberOfYears" type="number" formControlName="numberOfYears">
+    @if (loanForm.get('numberOfYears')?.invalid && loanForm.get('numberOfYears')?.touched) {
+      <div class="error-message">Number of years must be greater than 0.</div>
+    }
+  </div>
+
+  <div class="form-actions">
+    <button type="button" (click)="saveForm()" [disabled]="loanForm.invalid">Save</button>
+    <button type="button" (click)="cancelEdit()">Cancel</button>
+  </div>
+</form>

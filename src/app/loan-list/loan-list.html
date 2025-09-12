@@ -1,0 +1,10 @@
+<div class="loan-list-container">
+  <h3>All Loans</h3>
+  <ul class="loan-list">
+    @for (loan of loans(); track loan.id) {
+      <li (click)="selectLoan(loan)" class="loan-item">
+        <span>{{ loan.id }}</span>
+      </li>
+    }
+  </ul>
+</div>

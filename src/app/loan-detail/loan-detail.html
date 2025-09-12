@@ -1,0 +1,25 @@
+<div class="loan-detail-card">
+    <h2>Loan Details</h2>
+    <div class="detail-grid">
+        <div class="detail-item">
+            <span class="label">Loan ID:</span>
+            <span class="value">{{ loan().id }}</span>
+        </div>
+        <div class="detail-item">
+            <span class="label">Amount:</span>
+            <span class="value">{{ loan().loanAmount | currency }}</span>
+        </div>
+        <div class="detail-item">
+            <span class="label">Interest Rate:</span>
+            <span class="value">{{ loan().annualInterestRate | percent:'1.2-2' }}</span>
+        </div>
+        <div class="detail-item">
+            <span class="label">Term:</span>
+            <span class="value">{{ loan().numberOfYears }} years</span>
+        </div>
+        <div class="detail-item">
+            <span class="label">Origination Date:</span>
+            <span class="value">{{ loan().loanDate | date:'longDate' }}</span>
+        </div>
+    </div>
+</div>
